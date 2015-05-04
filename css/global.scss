@@ -1,0 +1,27 @@
+$primary-tone: #333;
+
+body {
+	margin-top: 50px;
+}
+
+img {
+	max-width:100%;
+}
+
+.text-center {
+	text-align:center;
+}
+
+.padded {
+	padding: 45px 0;
+	@media all screen and (max-width:750px) {
+		padding: 25px 0;
+	}
+}
+
+.padded-sm {
+	padding: 25px 0;
+	@media all screen and (max-width:750px) {
+		padding: 12px 0;
+	}
+}

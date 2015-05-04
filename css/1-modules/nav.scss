@@ -1,0 +1,99 @@
+#siteid {
+	$idSize:40px;
+	@include position(absolute, 5px null null 50%);
+	@include size($idSize);
+	margin-left:-($idSize / 2);
+	box-shadow: 0 0 0 4px #fff;
+}
+
+nav {
+	height: 50px;
+	box-shadow: 0 1px 12px rgba(0,0,0,0.2);
+	@include position(fixed, 0 null null null);
+	width: 100%;
+	top: 0;
+	background-color: #fff;
+	z-index: 9001;
+}
+
+#hamburger {
+	@include position(absolute, 0 null null 0);
+	@include size(50px);
+	cursor:pointer;
+	opacity:0.6;
+	&:before {
+		content: "";
+		display: block;
+		@include size(32px 6px);
+		@include position(absolute, 14px auto auto 9px);
+		@include transition(all, 0.3s);
+		box-sizing: content-box;
+		border-top:3px solid #333;
+		border-bottom:3px solid #333;
+	}
+	&:after {
+		content: "";
+		display: block;
+		@include size(32px 3px);
+		@include position(absolute, 32px auto auto 9px);
+		@include transition(all, 0.3s);
+		background-color: #333;
+	}
+	&.open {
+		opacity: 1;
+		&:before {
+			border-bottom: 0;
+			@include transform(rotate(-45deg));
+			@include position(absolute, 22px auto auto 11px);
+		}
+		&:after {
+			@include transform(rotate(45deg));
+			@include position(absolute, 23px auto auto 9px);
+		}
+	}
+}
+section.mobile-menu {
+	@include position(fixed, 50px auto auto 0);
+	@include size(100%);
+	@include transition(left, 0.3s ease-out);
+	z-index: 9000;
+	background-color: rgba(0,0,0,0.8);
+	display:none;
+	&.open {
+		display: table;
+	}
+	ul {
+		display: table-cell;
+		vertical-align: middle;
+		margin: 0 auto;
+		text-align: center;
+		list-style-type: none;
+		li {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 45px;
+			a {
+				font-size: 1em;
+				display: block;
+				height: 100%;
+				padding: 0 15px;
+				line-height: 45px;
+				overflow-x: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				color: #eee;
+				font-weight: bold;
+				text-transform: uppercase;
+				@include transition(all, 0.3s);
+				&:hover {
+					background-color:rgba(250,250,250,0.1);
+					color:#fff;
+				}
+				&:active {
+					color: $primary-tone;
+				}
+			}
+		}
+	}
+}
