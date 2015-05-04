@@ -4,6 +4,20 @@
 	@include size($idSize);
 	margin-left:-($idSize / 2);
 	box-shadow: 0 0 0 4px #fff;
+	& img:last-of-type {
+		display: none;
+	}
+	@media screen and (min-width: 750px) {
+		@include size(auto);
+		margin-left:-(113px / 2);
+		& img:first-of-type {
+			display: none;
+		}
+		& img:last-of-type {
+			display: block;
+			@include size(auto $idSize);
+		}
+	}
 }
 
 nav {

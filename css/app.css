@@ -831,6 +831,19 @@ img {
   width: 40px;
   margin-left: -20px;
   box-shadow: 0 0 0 4px #fff; }
+  #siteid img:last-of-type {
+    display: none; }
+  @media screen and (min-width: 750px) {
+    #siteid {
+      height: auto;
+      width: auto;
+      margin-left: -56.5px; }
+      #siteid img:first-of-type {
+        display: none; }
+      #siteid img:last-of-type {
+        display: block;
+        height: 40px;
+        width: auto; } }
 
 nav {
   height: 50px;
