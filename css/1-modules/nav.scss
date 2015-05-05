@@ -76,7 +76,7 @@ section.mobile-menu {
 	display:table;
 	box-shadow: 0 1px 12px rgba(0,0,0,0.2);
 	&.open {
-		@include position(fixed, 50px auto auto 0);
+		@include position(fixed, 0 auto auto 0);
 	}
 	ul {
 		display: table-cell;
@@ -102,7 +102,7 @@ section.mobile-menu {
 				font-weight: bold;
 				text-transform: uppercase;
 				@include transition(all, 0.3s);
-				@media screen and (min-width:720px) {
+				@media screen and (min-width:750px) {
 					font-size: 24px;
 				}
 				&:hover {

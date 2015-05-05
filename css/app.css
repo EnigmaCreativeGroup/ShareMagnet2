@@ -499,6 +499,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
   font-weight: bold; }
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0; }
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+  margin-bottom: 0; }
 
 h1 {
   font-size: 4.0rem;
@@ -830,6 +834,18 @@ img {
     .padded-sm {
       padding: 12px 0; } }
 
+.window {
+  padding: 65px 0;
+  background-color: #eee; }
+  .window.black {
+    background: #333;
+    color: #fff; }
+  .window.blue {
+    background: #91C2FF; }
+  @media all screen and (max-width: 750px) {
+    .window {
+      padding: 30px 0; } }
+
 #siteid {
   position: absolute;
   top: 5px;
@@ -944,7 +960,7 @@ section.mobile-menu {
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2); }
   section.mobile-menu.open {
     position: fixed;
-    top: 50px;
+    top: 0;
     right: auto;
     bottom: auto;
     left: 0; }
@@ -974,7 +990,7 @@ section.mobile-menu {
         -webkit-transition: all, 0.3s;
         -moz-transition: all, 0.3s;
         transition: all, 0.3s; }
-        @media screen and (min-width: 720px) {
+        @media screen and (min-width: 750px) {
           section.mobile-menu ul li a {
             font-size: 24px; } }
         section.mobile-menu ul li a:hover {

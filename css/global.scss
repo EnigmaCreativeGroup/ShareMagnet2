@@ -25,3 +25,18 @@ img {
 		padding: 12px 0;
 	}
 }
+
+.window {
+	padding: 65px 0;
+	background-color: #eee;
+	&.black {
+		background: #333;
+		color: #fff;
+	}
+	&.blue {
+		background: $primary-tone;
+	}
+	@media all screen and (max-width:750px) {
+		padding: 30px 0;
+	}
+}
