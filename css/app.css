@@ -367,7 +367,7 @@ picture {
   .container {
     width: 85%;
     padding: 0; } }
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .container {
     width: 80%; }
 
@@ -841,7 +841,8 @@ img {
     background: #333;
     color: #fff; }
   .window.blue {
-    background: #91C2FF; }
+    background: #91C2FF;
+    color: #fff; }
   @media all screen and (max-width: 750px) {
     .window {
       padding: 30px 0; } }
@@ -878,6 +879,27 @@ nav {
   top: 0;
   background-color: #fff;
   z-index: 9001; }
+  nav .right {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    bottom: auto;
+    left: auto;
+    display: none; }
+    @media screen and (min-width: 420px) {
+      nav .right {
+        display: block; } }
+    nav .right span {
+      display: none; }
+    nav .right .button, nav .right button {
+      padding: 0 12px; }
+    @media screen and (min-width: 750px) {
+      nav .right span {
+        display: inline; }
+      nav .right .button, nav .right button {
+        padding: 0 30px; }
+      nav .right i {
+        display: none; } }
 
 #hamburger {
   position: absolute;
@@ -951,19 +973,20 @@ section.mobile-menu {
   left: 0;
   height: 100%;
   width: 100%;
-  -webkit-transition: top, 0.3s ease-out;
-  -moz-transition: top, 0.3s ease-out;
-  transition: top, 0.3s ease-out;
+  -webkit-transition: all, 0.3s ease-out;
+  -moz-transition: all, 0.3s ease-out;
+  transition: all, 0.3s ease-out;
   z-index: 9000;
-  background-color: rgba(145, 194, 255, 0.94);
+  background-color: rgba(145, 194, 255, 0);
   display: table;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2); }
   section.mobile-menu.open {
     position: fixed;
-    top: 0;
+    top: 0px;
     right: auto;
     bottom: auto;
-    left: 0; }
+    left: 0;
+    background-color: rgba(145, 194, 255, 0.96); }
   section.mobile-menu ul {
     display: table-cell;
     vertical-align: middle;

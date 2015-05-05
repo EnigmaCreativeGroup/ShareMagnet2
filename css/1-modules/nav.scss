@@ -29,6 +29,30 @@ nav {
 	top: 0;
 	background-color: #fff;
 	z-index: 9001;
+	.right {
+		@include position(absolute, 6px 5px auto auto);
+		display: none;
+		@media screen and (min-width:420px) {
+			display: block;
+		}
+		span {
+			display: none;
+		}
+		.button, button {
+  		padding: 0 12px;
+  	}
+		@media screen and (min-width:750px) {
+			span {
+				display: inline;
+			}
+			.button, button {
+	  		padding: 0 30px;
+	  	}
+	  	i {
+	  		display: none;
+	  	}
+		} 
+	}
 }
 
 #hamburger {
@@ -70,13 +94,14 @@ nav {
 section.mobile-menu {
 	@include position(fixed, -100% auto auto 0);
 	@include size(100%);
-	@include transition(top, 0.3s ease-out);
+	@include transition(all, 0.3s ease-out);
 	z-index: 9000;
-	background-color: rgba(145,194,255,0.94);
+	background-color: rgba(145,194,255,0);
 	display:table;
 	box-shadow: 0 1px 12px rgba(0,0,0,0.2);
 	&.open {
-		@include position(fixed, 0 auto auto 0);
+		@include position(fixed, 0px auto auto 0);
+		background-color: rgba(145,194,255,0.96);
 	}
 	ul {
 		display: table-cell;

@@ -96,7 +96,7 @@ $global-radius: 4px !default;
 }
 
 // For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
+@media (#{$bp-larger-than-tablet}) {
   .container {
     width: $container-width-larger-than-phablet;
   }

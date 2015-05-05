@@ -11,6 +11,7 @@
 	  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 
 	  <!-- CSS -->
+	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	  <link rel="stylesheet" href="css/app.css">
 
 	  <!-- JS -->
@@ -19,41 +20,38 @@
 	</head>
 	<body>
 
+		<!-- NAV -->
+
 		<nav>
 			<div id="hamburger"></div>	
 			<a id="siteid" href="/">
 				<img src="img/logo-tiny.png">
 				<img src="img/logo-text-small.png">
 			</a>
+			<div class="right">
+				<a class="button button-none" href="#"><i class="fa fa-sign-in"></i> <span>Log in</span></a>
+				<a class="button button-primary" href="#">Register</a>
+			</div>
 		</nav>
 
 		<section class="mobile-menu">
 			<ul>
 				<li><a href="#">Magnets</a></li>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Sign up</a></li>
+				<li><a href="#">Register</a></li>
 				<li><a href="#">Log in</a></li>
 			</ul>
 		</section>
 
-		<div class="window text-center black">
+		<!-- /NAV -->
+
+		<div class="window text-center blue">
 			<div class="container">
-				<h3 class="bold">Style Guide:</h3>
+				<h1>Style Guide:</h1>
 			</div>
 		</div>
 
 		<div class="container">
-		  <div class="row padded">
-		    <div class="twelve columns">
-		    	<h5 class="bold">Buttons:</h5>
-		    	<!-- Standard buttons -->
-		    	<a class="button" href="#">Standard button</a>
-
-		    	<!-- Primary buttons -->
-		    	<a class="button button-primary" href="#">Primary button</a>
-		    </div>
-		  </div>
-
 		  <!-- columns should be the immediate child of a .row -->
 		  <div class="row padded">
 		    <div class="six columns">
@@ -89,6 +87,17 @@
 		    	<em>Italicized</em>
 		    	<a>Colored</a>
 		    	<u>Underlined</u>
+		    </div>
+		  </div>
+
+		  <div class="row padded">
+		    <div class="twelve columns">
+		    	<h5 class="bold">Buttons:</h5>
+		    	<!-- Standard buttons -->
+		    	<a class="button" href="#">Standard button</a>
+
+		    	<!-- Primary buttons -->
+		    	<a class="button button-primary" href="#">Primary button</a>
 		    </div>
 		  </div>
 
