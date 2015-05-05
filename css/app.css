@@ -559,7 +559,7 @@ button {
   padding: 0 30px;
   color: #555555;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -578,7 +578,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   padding: 0 30px;
   color: #555555;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -615,35 +615,33 @@ input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focu
 
 .button.button-primary,
 button.button-primary {
-  color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0; }
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #91C2FF;
+  border-color: #91C2FF; }
 
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
-  color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0; }
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #91C2FF;
+  border-color: #91C2FF; }
 
 .button.button-primary:hover,
 button.button-primary:hover {
-  color: #fff;
-  background-color: #1eaedb;
+  background-color: #5ea6ff;
   border-color: #1eaedb; }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
-  color: #fff;
-  background-color: #1eaedb;
+  background-color: #5ea6ff;
   border-color: #1eaedb; }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #1eaedb;
+  background-color: #5ea6ff;
   border-color: #1eaedb; }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #1eaedb;
+  background-color: #5ea6ff;
   border-color: #1eaedb; }
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
@@ -678,12 +676,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #91C2FF;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #91C2FF;
   outline: 0; }
 
 label,
@@ -965,6 +963,6 @@ section.mobile-menu {
           background-color: rgba(250, 250, 250, 0.1);
           color: #fff; }
         section.mobile-menu ul li a:active {
-          color: #333; }
+          color: #91C2FF; }
 
 /*# sourceMappingURL=app.css.map */

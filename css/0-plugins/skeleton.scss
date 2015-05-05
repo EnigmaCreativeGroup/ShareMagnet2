@@ -38,7 +38,7 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 // Colors
 $light-grey: #e1e1e1 !default;
 $dark-grey: #333 !default;
-$primary-color: #33c3f0 !default;
+$primary-color: #91C2FF !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
 $link-color: #1eaedb !default;
@@ -232,7 +232,7 @@ button {
   padding: 0 30px;
   color: $secondary-color;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -255,7 +255,7 @@ input {
     padding: 0 30px;
     color: $secondary-color;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 38px;
     letter-spacing: .1rem;
@@ -306,7 +306,7 @@ input {
 
 .button.button-primary,
 button.button-primary {
-  color: #fff;
+  color: rgba(0,0,0,0.6);
   background-color: $primary-color;
   border-color: $primary-color;
 }
@@ -315,7 +315,7 @@ input {
   &[type="submit"].button-primary,
   &[type="reset"].button-primary,
   &[type="button"].button-primary {
-    color: #fff;
+    color: rgba(0,0,0,0.6);
     background-color: $primary-color;
     border-color: $primary-color;
   }
@@ -323,8 +323,7 @@ input {
 
 .button.button-primary:hover,
 button.button-primary:hover {
-  color: #fff;
-  background-color: $link-color;
+  background-color: darken($primary-color, 10%);
   border-color: $link-color;
 }
 
@@ -332,8 +331,7 @@ input {
   &[type="submit"].button-primary:hover,
   &[type="reset"].button-primary:hover,
   &[type="button"].button-primary:hover {
-    color: #fff;
-    background-color: $link-color;
+    background-color: darken($primary-color, 10%);
     border-color: $link-color;
   }
 }
@@ -341,7 +339,7 @@ input {
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: $link-color;
+  background-color: darken($primary-color, 10%);
   border-color: $link-color;
 }
 
@@ -350,7 +348,7 @@ input {
   &[type="reset"].button-primary:focus,
   &[type="button"].button-primary:focus {
     color: #fff;
-    background-color: $link-color;
+    background-color: darken($primary-color, 10%);
     border-color: $link-color;
   }
   &[type="email"],
