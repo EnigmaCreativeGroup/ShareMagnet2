@@ -41,17 +41,17 @@ nav {
 		.button, button {
   		padding: 0 12px;
   	}
-		@media screen and (min-width:750px) {
+		@media screen and (min-width:960px) {
 			span {
 				display: inline;
+			}
+			i {
+				display: none;
 			}
 			.button, button {
 	  		padding: 0 30px;
 	  	}
-	  	i {
-	  		display: none;
-	  	}
-		} 
+		}
 	}
 }
 
