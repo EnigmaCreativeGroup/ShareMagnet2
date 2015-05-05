@@ -9,13 +9,14 @@
 	}
 	@media screen and (min-width: 750px) {
 		@include size(auto);
-		margin-left:-(113px / 2);
+		top: 9px;
+		margin-left:-(108px / 2);
 		& img:first-of-type {
 			display: none;
 		}
 		& img:last-of-type {
 			display: block;
-			@include size(auto $idSize);
+			@include size(auto 32px);
 		}
 	}
 }

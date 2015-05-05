@@ -438,7 +438,7 @@ legend {
   font-family: $styled-font-family;
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-weight: normal;
   &:after {
     content:":";
   }
@@ -460,6 +460,7 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal;
+  font-family: $font-family;
 }
 
 // Lists

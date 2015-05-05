@@ -693,7 +693,7 @@ legend {
   font-family: "Roboto Slab", Serif;
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600; }
+  font-weight: normal; }
   label:after,
   legend:after {
     content: ":"; }
@@ -708,7 +708,8 @@ input[type="checkbox"], input[type="radio"] {
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 ul {
   list-style: circle inside; }
@@ -843,12 +844,13 @@ img {
     #siteid {
       height: auto;
       width: auto;
-      margin-left: -56.5px; }
+      top: 9px;
+      margin-left: -54px; }
       #siteid img:first-of-type {
         display: none; }
       #siteid img:last-of-type {
         display: block;
-        height: 40px;
+        height: 32px;
         width: auto; } }
 
 nav {
