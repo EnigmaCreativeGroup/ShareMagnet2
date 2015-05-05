@@ -45,6 +45,7 @@ $link-color: #1eaedb !default;
 $font-color: #222 !default;
 
 // Typography
+$styled-font-family: 'Roboto Slab', Serif !default;
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 //Grid Variables
@@ -189,6 +190,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+  font-family: $styled-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &.bold {
+    font-weight: bold;
+  }
 }
 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;  }
@@ -427,9 +435,13 @@ select:focus {
 
 label,
 legend {
+  font-family: $styled-font-family;
   display: block;
   margin-bottom: .5rem;
   font-weight: 600;
+  &:after {
+    content:":";
+  }
 }
 
 fieldset {

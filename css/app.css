@@ -494,7 +494,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: "Roboto Slab", Serif; }
+
+h1.bold, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
+  font-weight: bold; }
 
 h1 {
   font-size: 4.0rem;
@@ -686,9 +690,13 @@ select:focus {
 
 label,
 legend {
+  font-family: "Roboto Slab", Serif;
   display: block;
   margin-bottom: .5rem;
   font-weight: 600; }
+  label:after,
+  legend:after {
+    content: ":"; }
 
 fieldset {
   padding: 0;
